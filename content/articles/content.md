@@ -315,7 +315,7 @@ articles/content-test.md
 
 git init
 git add . 
-git remote add origin https://github.com/bonhansaudoi/nuxt-content git
+git remote add origin https://github.com/bonhansaudoi/nuxt-content.git
 git commit -m "commit" 
 git push -u origin master
 
@@ -323,9 +323,9 @@ git push -u origin master
   
 #### create [Netlify-site](https://www.netlify.com/) 
 
-+ Create a new site
-+ GitHub 
 + Netlify GitHub app permissions
++ Create a new site
++ GitHub  
     + npm run generate  
     + dish
 </article> 
