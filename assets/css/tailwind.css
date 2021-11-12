@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+    h1 {@apply text-3xl md:text-4xl lg:text-5xl font-semibold text-center uppercase;} 
+    h2 {@apply text-2xl md:text-3xl lg:text-4xl font-semibold;}
+    h3 {@apply text-lg md:text-2xl lg:text-3xl font-semibold;}  
+    h4 {@apply text-xl md:text-xl lg:text-2xl font-semibold;} 
+    p {@apply first-letter:text-2xl first-letter:font-semibold;}
+    button, input {@apply focus:outline-none;}  
+    article, section { @apply space my-4 md:my-6 lg:my-10;}
+    p {@apply first-letter:text-2xl first-letter:font-semibold;}
+    button, input {@apply focus:outline-none;} 
+} 
+
+@layer utilities {  
+    .main, .canvas, .modal {@apply absolute inset-0 lg:overflow-hidden;}  
+    .container-main {@apply p-4 md:p-6 lg:p-8 space-y-4 md:space-y-6 lg:space-y-8;}
+    .container-card {@apply lg:w-3/4 lg:mx-auto m-4 md:m-6 lg:my-8 space-y-4 md:space-y-6 lg:space-y-8;}
+    .container-col {@apply md:flex md:px-6 md:my-6 lg:my-8;}
+    .card {@apply border-2 rounded-2xl shadow-md border-gray-500;}
+    .content {@apply p-4 md:p-6 lg:p-8 space-y-4 md:space-y-6 lg:space-y-8;}  
+    .center {@apply flex flex-col justify-center items-center;} 
+    .center-row {@apply flex flex-wrap justify-center;}  
+    .space {@apply space-y-4 md:space-y-6 lg:space-y-8;} 
+    .margin-l { @apply ml-4 md:ml-6 lg:ml-8;}  
+/* navbar */  
+    .navbar {@apply relative lg:flex p-4 uppercase lg:text-lg;}  
+    .navbar-logo {@apply flex justify-between items-center;} 
+    .hamberger {@apply inline-flex items-center;}  
+    .navbar-menu {@apply lg:flex lg:flex-row lg:flex-grow lg:justify-between lg:items-center mt-4 lg:mt-0 p-4 lg:p-0 space-y-4 lg:space-y-0 border-2 rounded-lg lg:border-none border-gray-400;} 
+    .menu-link {@apply flex flex-col lg:flex-row lg:items-center space-y-4 lg:space-y-0 lg:space-x-6;} 
+    /* .navbar-right {@apply lg:flex lg:items-center lg:space-x-4 space-y-4 lg:space-y-0;} */
+
+    .navbar-auth {@apply flex space-x-4;}
+    .signin, .signup {@apply flex cursor-pointer;}
+} 
+

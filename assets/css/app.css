@@ -1,0 +1,18 @@
+ul li {list-style-type: initial;}
+ul li > * > * {list-style-type: circle;} 
+
+/* layout-transition */ 
+.layout-enter-active, .layout-leave-active {
+  	transition: opacity 0.5s;
+}
+.layout-enter, .layout-leave-active {
+  	opacity: 0;
+} 
+
+/* page-transition */
+.page-enter-active, .page-leave-active { 
+  	transition: opacity 0.5s;
+}
+.page-enter, .page-leave-active { 
+	opacity: 0;
+} 
